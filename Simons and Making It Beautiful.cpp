@@ -31,14 +31,13 @@ int main() {
 			cin >> arr[i];
 		}
 		int*pmax = max_element(arr + 1, arr + n + 1);
-		cout << *pmax;
+		swap(*pmax, arr[1]);
 		for (int i = 1; i <= n; i++) {
-			if (arr[i] == *pmax) {
-				continue;
-			} else {
-				cout << arr[i];
-			}
+			cout << arr[i]; //TODO
+			cout << " ";
 		}
+		cout << "\n";
+
 	}
 	return 0;
 }
